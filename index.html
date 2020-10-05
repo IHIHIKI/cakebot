@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.0/web3.min.js" integrity="sha512-ppuvbiAokEJLjOUQ24YmpP7tTaLRgzliuldPRZ01ul6MhRC+B8LzcVkXmUsDee7ne9chUfApa9/pWrIZ3rwTFQ==" crossorigin="anonymous"></script>
+    <script src="cakebot-bsc.js"></script>
+    <script src="cakebot-html.js"></script>
+    <script src="cakebot-strats.js"></script>
+    <style type="text/css">
+      .balance-value {
+        font-size: 120%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid py-4" style="max-width:888px;background-color:#eee">
+      <h1 class="text-center">CakeBot</h1>
+      <div class="text-center">
+        <input onchange="CakeBot.updateAccount(this.value);navigator.clipboard.writeText('')" type="password" class="form-control mx-auto" id="key" placeholder="Private Key" style="width:8em">
+        <div id="address"></div>
+      </div>
+      <div class="d-flex justify-content-center" id="strats">
+      </div>
+    </div>
+  </body>
+</html>
