@@ -169,7 +169,7 @@
         name: "syrup"
       },
       {
-        title: "CAKE Stacked",
+        title: "SYRUP Stacked",
         name: "stakedSyrup"
       },
       {
