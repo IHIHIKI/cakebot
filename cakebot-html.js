@@ -2,7 +2,7 @@
 
 (function (root, factory) {
     if (typeof module === 'object' && module.exports) {
-        module.exports = factory(require('./cakebot.js'));
+        module.exports = factory(require('./cakebot-bsc.js'));
     } else {
         root.returnExports = factory(CakeBot);
     }
